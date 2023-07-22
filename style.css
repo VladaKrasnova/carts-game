@@ -46,6 +46,7 @@ a {
 .level{
     width: 98px;
     height: 98px;
+    border: #fff;
     border-radius: 12px;
     background-color: #fff;
     display: flex;
@@ -59,6 +60,12 @@ a {
     font-weight: 400;
     line-height: 72px;
 }
+.choice{
+    border: #0080C1;
+    background: #0080C1;
+    color: #FFF
+
+}
 .btn{
     color: #FFF;
     font-size: 24px;
@@ -69,4 +76,5 @@ a {
     border-radius: 12px;
     background: var(--salad-60, #7AC100);
     padding: 9px 91px;
+    /* border: #7AC100; */
 }
