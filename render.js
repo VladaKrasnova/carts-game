@@ -1,7 +1,8 @@
+import { state } from "./index.js";
 
 export function renderFirstPage() {
     const app = document.getElementById('app');
-    app.innerHTML = `<div class="content" >
+    app.innerHTML = `<div class="content">
     <h1 class="text">Выбери <br>сложность</h1>
         <div class="levels">
         <button type="button" value="1" class="level level1">1</button>
@@ -11,15 +12,6 @@ export function renderFirstPage() {
         <button type="submit" class="btn" disabled>Старт</button>
         </div>`;
 }
-
-
-export function startGame() {
-    const app = document.getElementById('app');
-    app.innerHTML = `<div>Игра началась!</div> `
-}
-
-let cardsForGame = [];
-
 
 export function issuingСards() {
     let lengthArr = "";
@@ -33,4 +25,5 @@ export function issuingСards() {
         lengthArr = 18;
     }
 }
+
 

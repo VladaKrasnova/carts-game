@@ -1,24 +1,24 @@
 @font-face {
-	font-family: 'StratosSkyeng'; 
-	src: url(/fonts/stratosskyengweb-regular.woff2); 
+    font-family: 'StratosSkyeng';
+    src: url(/fonts/stratosskyengweb-regular.woff2);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #004980;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 a {
     text-decoration: none;
 }
-.content{
+
+.content {
     width: 480px;
     padding: 54px 0;
     background-color: #C2F5FF;
@@ -27,8 +27,10 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 120px auto 0 auto;
 }
-.text{
+
+.text {
     color: #004980;
     text-align: center;
     font-size: 40px;
@@ -36,14 +38,16 @@ a {
     font-style: normal;
     font-weight: 400;
 }
-.levels{
+
+.levels {
     margin: 48px 0 67px 0;
     width: 342px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.level{
+
+.level {
     width: 98px;
     height: 98px;
     border: #fff;
@@ -60,13 +64,14 @@ a {
     font-weight: 400;
     line-height: 72px;
 }
-.choice{
+
+.choice {
     border: #0080C1;
     background: #0080C1;
     color: #FFF
-
 }
-.btn{
+
+.btn {
     color: #FFF;
     font-size: 24px;
     font-family: 'StratosSkyeng';
@@ -77,4 +82,65 @@ a {
     background: var(--salad-60, #7AC100);
     padding: 9px 91px;
     /* border: #7AC100; */
+}
+
+.head {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-timer {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    margin-left: 40px;
+}
+
+.timer {
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'StratosSkyeng';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+.head-time {
+    color: #FFF;
+    font-family: 'StratosSkyeng';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+}
+
+.button {
+    font-family: 'StratosSkyeng';
+    color: #FFF;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 8px 40px 10px 40px;
+    background: var(--salad-60, #7AC100);
+    border-radius: 12px;
+}
+
+.card {}
+#game-board {
+    width: 100%;
+    margin-left: 22px;
+    margin-right: 22px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
 }

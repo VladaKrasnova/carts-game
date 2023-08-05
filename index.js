@@ -1,8 +1,11 @@
-import { renderFirstPage, startGame } from "./render.js";
+import { renderFirstPage } from "./render.js";
+import { startGame } from "./game-board.js";
 
 renderFirstPage();
 
-export let difficulty = "";
+export let state = {
+    difficulty:  ""
+};
 
 let choiceLevels = document.querySelectorAll(".level");
 let choiceButton = document.querySelector(".btn");
